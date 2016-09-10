@@ -1,19 +1,22 @@
 package com.example.hp.gsonandroid.Model;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by HP on 9/10/2016.
  */
 public class FacebookModel {
-    private String login;
+    @SerializedName("login")
+    private String login01;
     private String id ;
     private String avatar_url;
 
     public String getLogin() {
-        return login;
+        return login01;
     }
 
     public void setLogin(String login) {
-        this.login = login;
+        this.login01 = login;
     }
 
     public String getId() {
